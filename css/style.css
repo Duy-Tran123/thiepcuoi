@@ -361,7 +361,10 @@ h6 {
       @media screen and (max-width: 768px) {
         .qbootstrap-cover .display-tc h2,
         .video-hero .display-tc h2 {
-          font-size: 60px; } }
+          font-size: 60px; }
+          .qbootstrap-cover .display-tc h2 span,
+          .video-hero .display-tc h2 span {
+            display: block; } }
     .qbootstrap-cover .display-tc p,
     .video-hero .display-tc p {
       color: #fff;

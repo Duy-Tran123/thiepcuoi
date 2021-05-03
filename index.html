@@ -53,6 +53,7 @@
 </head>
 
 <body>
+
 	<header role="banner" id="qbootstrap-header">
 		<div class="container">
 			<!-- <div class="row"> -->
@@ -90,8 +91,11 @@
 							<div class="animate-box svg-sm colored">
 								<img src="images/flaticon/svg/004-nature.svg" class="svg" alt="Free HTML5 Bootstrap Template by QBootstrap.com">
 								<h1 class="holder"><span>The Wedding of</span></h1>
-								<h2>Duy Trần &amp; Thu Hường</h2>
+								<h2>Khánh Duy <span>&</span> Thu Hường</h2>
 								<p>24.10.2021</p>
+								<audio controls autoplay>
+									<source src="images/audio.mp3">
+								</audio>
 							</div>
 						</div>
 					</div>
@@ -522,7 +526,12 @@
 	<script src="js/magnific-popup-options.js"></script>
 	<!-- Main JS (Do not remove) -->
 	<script src="js/main.js"></script>
-
+	<script>
+		window.onload = function () {
+			var context = new AudioContext();
+		}
+	</script>
 </body>
+
 
 </html>

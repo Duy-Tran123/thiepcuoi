@@ -487,11 +487,15 @@ h6 {
       margin-bottom: 20px;
       font-family: "Pattaya", sans-serif;
       font-weight: 300 !important;
+
       strong {
         font-weight: 700;
       }
       @media screen and (max-width: $screen-sm) {
         font-size: 60px;
+        span {
+          display: block;
+        }
       }
     }
     p {
