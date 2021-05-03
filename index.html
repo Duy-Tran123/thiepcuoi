@@ -93,8 +93,9 @@
 								<h1 class="holder"><span>The Wedding of</span></h1>
 								<h2>Khánh Duy <span>&</span> Thu Hường</h2>
 								<p>24.10.2021</p>
-								<audio controls autoplay>
-									<source src="images/audio.mp3">
+
+								<audio id="audio" controls>
+									<source src="images/audio.mp3" type="audio/mp3">
 								</audio>
 							</div>
 						</div>
@@ -526,11 +527,15 @@
 	<script src="js/magnific-popup-options.js"></script>
 	<!-- Main JS (Do not remove) -->
 	<script src="js/main.js"></script>
-	<script>
-		window.onload = function () {
-			var context = new AudioContext();
+	<script type="text/javascript">
+		function autoplay() {
+			var r = confirm("Would You Like To AutoPlay Music?");
+			if (r == true) {
+				document.getElementById("audio").play();
+			}
 		}
 	</script>
+	<script>autoplay();</script>
 </body>
 
 
