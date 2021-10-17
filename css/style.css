@@ -55,6 +55,104 @@ h6 {
   color: #818892;
   background: #f9f6f0; }
 
+#loading {
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  background: url("../images/blog-3.jpg") no-repeat center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  overflow-y: hidden;
+  transition: all 0.5s ease;
+  background-size: cover; }
+  #loading .loading1 {
+    background: 50% 100%/50% 50% no-repeat radial-gradient(ellipse at bottom, #fff, transparent, transparent);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 14px;
+    font-family: "Source Sans Pro", sans-serif;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    animation: reveal 3000ms ease-in-out forwards 200ms, glow 2500ms linear infinite 2000ms; }
+@keyframes reveal {
+  80% {
+    letter-spacing: 8px; }
+  100% {
+    background-size: 300% 300%; } }
+@keyframes glow {
+  40% {
+    text-shadow: 0 0 8px #fff; } }
+  #loading .container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  #loading .loading-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #loading .loading-container .loading-line-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      justify-content: flex-start;
+      box-sizing: content-box;
+      transition: box-shadow 0.5s;
+      padding: 2px;
+      position: relative;
+      width: 40%;
+      height: 20px;
+      border: 2px solid rgba(32, 186, 230, 0.5);
+      border-radius: 20px; }
+      @media screen and (max-width: 1500px) {
+        #loading .loading-container .loading-line-container {
+          width: 45%; } }
+      @media screen and (max-width: 1000px) {
+        #loading .loading-container .loading-line-container {
+          width: 60%; } }
+      @media screen and (max-width: 500px) {
+        #loading .loading-container .loading-line-container {
+          width: 70%; } }
+      @media screen and (max-width: 350px) {
+        #loading .loading-container .loading-line-container {
+          width: 80%; } }
+  #loading .loading-percent {
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    z-index: 999;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.9rem;
+    opacity: 0.9; }
+  #loading .loading-line {
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    background-image: linear-gradient(135deg, #20bae6, #6e06ad);
+    opacity: 0.8; }
+@keyframes startLoading {
+  0% {
+    width: 0%; }
+  100% {
+    width: 100%; } }
+  #loading .startLoading {
+    animation-name: startLoading;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-duration: 4s;
+    animation-timing-function: cubic-bezier(0, 0, 0, 0); }
+
 #qbootstrap-header {
   position: absolute;
   z-index: 99;
