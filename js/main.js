@@ -71,8 +71,8 @@
 		} , { offset: '75%' } );
 
 	};
-
-
+	
+		
 	// Burger Menu
 	var burgerMenu = function() {
 
@@ -306,6 +306,42 @@
 		inlineSVG();
 		bgVideo();
 	});
+
+
+	// const loadingPercent = document.querySelector(".loading-percent");
+	// 	const loadingLineContainer = document.querySelector(".loading-line-container");
+
+	// 	var percent = 0;
+	// 	var loop = setInterval(() => {
+	// 		if (percent != 100) {
+	// 			percent++;
+	// 			loadingPercent.innerText = `${percent}%`;
+	// 		} else {
+	// 			clearInterval(loop)
+	// 			loadingLineContainer.style.boxShadow = "0px 0px 2px 3px rgba(25, 135, 84, .5)"
+	// 			loadingLineContainer.style.borderColor = "rgba(25, 135, 84, .5)";
+	// 			loadingPercent.fadeOut("slow");
+	// 		}
+	// 	}, 40)
+	// 	function onReady(callback) {
+	// 	var intervalId = window.setInterval(function() {
+	// 		if (document.getElementsByTagName('body')[0] !== undefined) {
+	// 		window.clearInterval(intervalId);
+	// 		callback.call(this);
+	// 		}
+	// 	}, 4000);
+	// 	}
+
+	// 	function setVisible(selector, visible) {
+	// 	document.querySelector(selector).style.opacity = visible ? '1' : '0';
+	// 	document.querySelector(selector).style.zIndex = visible ? '1000' : '0';
+
+	// 	}
+
+	// 	onReady(function() {
+	// 	setVisible('#wrap', true);
+	// 	setVisible('#loading', false);
+	// 	});
 
 
 }());
